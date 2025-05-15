@@ -1,0 +1,608 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin: 30px;
+  
+}
+
+
+.HighConverting {
+    background: white;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas:
+        "navHigh  navHigh"
+        "mainHigh mainHigh"
+        "mainHigh mainHigh"
+        "footerHigh footerHigh";
+}
+
+.navHigh {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ 
+    grid-area: navHigh;
+    padding-bottom: 20px;
+
+
+}
+
+.mainHigh {
+    box-sizing: border-box;
+  
+    grid-area: mainHigh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas:
+        "highmainright  asideHigh";
+}
+
+.highmainright {
+
+    grid-area: highmainright;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.asideHigh {
+
+    background: gainsboro;
+    grid-area: asideHigh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: none;
+    height: 100%;
+    width: 20vw;
+
+
+}
+
+.footerHigh {
+    grid-area: footerHigh;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.navHigh ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.navHigh ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.fa-circle-user {
+    font-size: 35px;
+}
+
+#menu {
+    font-size: 40px;
+}
+
+.btnCtaLitle {
+    color: azure;
+    border-radius: 15px;
+    padding: 5px;
+    background: black;
+    display: none;
+    border: none;
+}
+
+.btnAchivementClass {
+    display: flex;
+    background-color:whitesmoke;
+    flex-direction: row;
+    border-radius: 25px;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+    width: 55%;
+    gap: 10px;
+    padding: 10px;
+    height: 25px;
+
+
+}
+
+#btnAchivement {
+    display: flex;
+    align-items: center;
+    background:gainsboro;
+    border-radius: 20px;
+    display: none;
+    padding: 10px;
+    height: 14px;
+    font-size: 12px;
+
+
+}
+
+#btnRow {
+    font-size: 20px;
+}
+
+.btnApp {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.btnAppA {
+    display: flex;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    background: black;
+    color: azure;
+    font-size: 13px;
+    border: none;
+
+}
+
+.mainHigh .like {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 9px;
+}
+
+
+
+/* FEAtures */
+
+.feature {
+    box-sizing: border-box;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas:
+        "head     head     head     head"
+        "feature1 feature1 feature1 feature1"
+        "feature1 feature1 feature1 feature1"
+        "feature2 feature2 feature3 feature3"
+        "feature2 feature2 feature3 feature3";
+}
+
+.head {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    grid-area: head;
+    gap: 10px;
+
+
+}
+
+.feature1 {
+    border-radius: 10px;
+    padding-top: 20px;
+    background: gainsboro;
+    grid-area: feature1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas:
+        "highFeature1 highFeature11";
+}
+
+.highFeature1 {
+    padding: 10px;
+    grid-area: highFeature1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20vw;
+
+}
+
+.highFeature11 {
+   
+    margin-right: 30px;
+    background: white;
+    grid-area: highFeature11;
+    border-radius: 5px;
+    display: none;
+    height: 100%;
+    width: 20vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  
+}
+
+.feature2 {
+    padding: 10px;
+    background: gainsboro;
+    border-radius: 10px;
+    grid-area: feature2;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas:
+        "highFeature2 "
+        "highFeature22";
+}
+
+.highFeature2 {
+    
+    border-radius: 10px;
+    padding-top: 20px;
+    background: gainsboro;
+    grid-area: highFeature2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+
+
+}
+
+.highFeature22 {
+    grid-area: highFeature22;
+    background: white;
+    display: none;
+    height: 25vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -20px;
+
+
+}
+
+.feature3 {
+    padding: 10px;
+    padding-top: 20px;
+    gap: 10px;
+    background: gainsboro;
+    border-radius: 10px;
+    grid-area: feature3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas:
+        "highFeature3 "
+        "highFeature33 ";
+
+}
+
+.highFeature3 {
+    gap: 10px;
+    grid-area: highFeature3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highFeature33 {
+
+    grid-area: highFeature33;
+    display: none;
+    background: white;
+    height: 25vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+      margin-bottom: -20px;
+}
+
+
+
+.whySection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas:
+        "whyTitle"
+        "cardQ";
+
+}
+
+#whyTitle {
+
+    
+    grid-area: whyTitle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+
+
+}
+
+.cardQ {
+  
+    grid-area: cardQ;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    overflow-x: auto;
+
+}
+
+.card1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+
+   
+}
+
+/* Review Section */
+#reviewSection{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,1fr);
+    grid-template-rows: repeat(auto-fill,1fr);
+    grid-template-areas: 
+    "reviewTitle"
+    "cardReviw";
+    overflow-x: auto;
+
+}
+
+.reviewTitle{
+    grid-area: reviewTitle;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20PX;
+}
+.cardReviw {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    grid-area: cardReviw;
+    background:gainsboro;
+    padding: 10px;
+    gap: 10px;
+    width: 140px;
+   
+}
+
+.namefooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+#cardBody{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+   
+}
+
+/* Faq Section */
+.faqSection{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,1fr);
+    grid-template-rows: repeat(auto-fill,1fr);
+    grid-template-areas: 
+    "leftFaq rightSection";
+}
+.leftFaq{
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  
+
+}
+.rightSection{
+    display: none;
+    flex-direction: column;
+   
+    grid-area: rightSection;
+    gap: 10px;
+    padding: 20px;
+}
+.why{
+display: flex;
+flex-direction: row;
+background: gainsboro;
+padding: 3px;
+gap: 10px;
+border-radius: 5px;
+
+}
+/* Cta Section */
+.ctaSection{
+    display: grid;
+   grid-template-columns: repeat(auto-fill,1fr);
+   grid-template-rows: repeat(auto-fill,1fr);
+   grid-template-areas:
+   "leftCta cuadroleft rightCta"
+  ;
+}
+.leftCta {
+
+    grid-area: leftCta ;
+    background: gainsboro;
+    padding: 20px;
+
+    
+}
+.titleCta{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cuadroleft{
+    grid-area: cuadroleft;
+    background: gainsboro;
+    display: none;
+    width: 200px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cuadro1{
+    background: white;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.rightCta{
+    grid-area: rightCta;
+    background: gainsboro;
+    display: none;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+.cuadro{
+    width: 100%;
+    background: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.footerCta{
+  padding-top: 40px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 60px;
+    font-weight: bold;
+}
+.footerCta ul{
+    list-style: none;
+ 
+}
+
+.footerCta ul a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*  */
+@media only screen and (min-width:768px) {
+    .footerCta ul{
+     display: flex;
+     flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+     
+    }
+    .footerCta{
+ 
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 10px;
+      }
+
+    .navHigh ul {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .btnCtaLitle {
+        display: flex;
+
+    }
+
+    #btnAchivement {
+        display: flex;
+    }
+
+
+    .mainHigh .btnAchivementClass #btnRow {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .like {
+        font-size: 16px;
+    }
+
+    .footerHigh {
+        font-size: 20px;
+    }
+
+    .highFeature11 {
+        display: flex;
+    }
+
+    .asideHigh {
+        display: flex;
+
+    }
+
+    .highFeature22 {
+
+        display: flex;
+    }
+
+    .highFeature33 {
+        display: flex;
+    }
+    .cardReviw{
+        width: 160px;
+    }
+  
+    .rightSection{
+        display: flex;
+    }
+
+    .cuadroleft{
+ 
+        display: flex;
+    }
+    .rightCta{
+      
+        display: flex;
+    }
+}
+
